@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page.component';
 import { NewReleasesComponent } from './pages/new-releases/new-releases.component';
 import { FeaturedComponent } from './pages/featured/featured.component';
 import { ViewMoreComponent } from './shared/view-more/view-more.component';
+import { OfferComponent } from './pages/offer/offer.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ViewMoreComponent } from './shared/view-more/view-more.component';
     NewReleasesComponent,
     FeaturedComponent,
     ViewMoreComponent,
+    OfferComponent,
   ],
   imports: [
     CommonModule,

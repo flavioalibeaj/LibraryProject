@@ -14,4 +14,10 @@ button {
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #393280;
+  color: white;
 }
