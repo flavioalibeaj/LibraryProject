@@ -12,6 +12,8 @@ import { NewReleasesComponent } from './home-page/pages/new-releases/new-release
 import { FeaturedComponent } from './home-page/pages/featured/featured.component';
 import { ViewMoreComponent } from './home-page/shared/view-more/view-more.component';
 import { OfferComponent } from './home-page/pages/offer/offer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 
@@ -27,6 +29,8 @@ import { OfferComponent } from './home-page/pages/offer/offer.component';
     FeaturedComponent,
     ViewMoreComponent,
     OfferComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
