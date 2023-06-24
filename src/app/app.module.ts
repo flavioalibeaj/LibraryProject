@@ -15,6 +15,7 @@ import { OfferComponent } from './home-page/pages/offer/offer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CollectionsComponent } from './home-page/pages/collections/collections.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -39,7 +40,8 @@ import { CollectionsComponent } from './home-page/pages/collections/collections.
     AppRoutingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    HttpClientModule
 
   ],
   providers: [],
