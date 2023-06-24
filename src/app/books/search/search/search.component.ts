@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -6,26 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
+  constructor(private router: Router) {}
 
-searchTerm: string = '';
-
-  onSearch(event: Event) {
-   
-    const inputValue = (event.target as HTMLInputElement).value;
-    
-    console.log('Ricerca per: ', inputValue);
+  openBooksSearch() {
+   // this.router.navigate(['/books-search']);
   }
-  
-
-  clearSearch() {
-    this.searchTerm = '';
-  }
-}
-
-
-function search() {
-  const searchInput = document.getElementById('search-input') as HTMLInputElement;
-  const searchTerm = searchInput.value;
-  
-  console.log('Ricerca per: ', searchTerm);
 }
