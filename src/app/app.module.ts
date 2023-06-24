@@ -16,6 +16,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CollectionsComponent } from './home-page/pages/collections/collections.component';
 import { SingleBookPageComponent } from './single-book-page/single-book-page.component';
+import { HttpClientModule } from '@angular/common/http';
 import { BooksModule } from './books/books.module';
 
 
@@ -43,7 +44,8 @@ import { BooksModule } from './books/books.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     AuthModule,
-    BooksModule
+    HttpClientModule,
+    BooksModule,
 
   ],
   providers: [],
