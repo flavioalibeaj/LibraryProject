@@ -18,7 +18,7 @@ export class HomePageComponent implements OnInit {
   }
 
   getAll() {
-    this.service.getAll().subscribe(res => {
+    this.service.findAll().subscribe(res => {
       console.log(res)
     })
   }

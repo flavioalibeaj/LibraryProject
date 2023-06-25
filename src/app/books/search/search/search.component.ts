@@ -1,15 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MainService } from 'src/app/services/main.service';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent {
-  constructor(private router: Router) {}
+export class SearchComponent implements OnInit {
 
-  openBooksSearch() {
-   // this.router.navigate(['/books-search']);
+  searchInput!: FormGroup
+
+  constructor(private mainService: MainService, private router: Router) { }
+
+  ngOnInit(): void {
+    this.searchInput = new FormGroup({
+      search: new FormControl(null)
+    })
   }
+
+
+  searchButton() {
+    const { searchValue } = this.searchInput.value
+
+    this.mainService.search(searchValue).subscribe(res => {
+      console.log("Response", res)
+      this.router.navigate(['/'], { queryParams: { search: searchValue } })
+    })
+  }
+
 }

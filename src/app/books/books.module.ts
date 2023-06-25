@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BooksRoutingModule } from './books-routing.module';
 import { SearchComponent } from './search/search/search.component';
 import { BooksPageComponentsComponent } from './pages/books-page-components/books-page-components.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,6 +15,7 @@ import { BooksPageComponentsComponent } from './pages/books-page-components/book
   imports: [
     CommonModule,
     BooksRoutingModule,
+    ReactiveFormsModule
   ],
   exports: [
     SearchComponent

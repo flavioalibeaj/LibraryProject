@@ -1,21 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { MainService } from 'src/app/services/main.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BookService {
+export class BookService extends MainService {
 
-  constructor(private http: HttpClient) { }
-
-  getAll(): Observable<any> {
-    return this.http.get<any>("http://localhost:5000/books")
+  constructor(http: HttpClient) {
+    super(http)
   }
 
-  getOne(id: string | number): Observable<any> {
-    return this.http.get<any>("http://localhost:5000/books/" + id)
+  findAll(): Observable<any> {
+    return super.getAll("books")
   }
 
+  findOne(id: string | number): Observable<any> {
+    return super.getOne("books", id)
+  }
 
 }
