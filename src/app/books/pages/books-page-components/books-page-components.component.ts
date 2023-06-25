@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class BooksPageComponentsComponent {
 
-  
-
+  categories: string[] = ['Fiction', 'Non-Fiction', 'Mystery', 'Romance', 'Sci-Fi'];
+  languages: string[] = ['English', 'Italian', 'French', 'Spanish', 'German'];
+  authors: string[] = ['Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey']
+  BooksPageComponentsComponent = BooksPageComponentsComponent;
 }
