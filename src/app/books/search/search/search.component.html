@@ -1,0 +1,11 @@
+<div class="search-container">
+  <form [formGroup]="searchInput" (ngSubmit)="searchButton()">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search..."
+      formControlName="search"
+    />
+    <button type="submit">Search</button>
+  </form>
+</div>
