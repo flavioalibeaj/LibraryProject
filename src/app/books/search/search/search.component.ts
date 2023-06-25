@@ -9,7 +9,4 @@ import { Router } from '@angular/router';
 export class SearchComponent {
   constructor(private router: Router) {}
 
-  openBooksSearch() {
-   // this.router.navigate(['/books-search']);
-  }
 }
