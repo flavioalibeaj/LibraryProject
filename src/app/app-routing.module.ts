@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: "collection", component: CollectionsComponent },
   { path: 'books', component: BooksPageComponentsComponent},
   { path: "books/:id", component: SingleBookPageComponent },
+  { path: "home-page", component: BooksPageComponentsComponent },
+  
 ];
 
 @NgModule({
