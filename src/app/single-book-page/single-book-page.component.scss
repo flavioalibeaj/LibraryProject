@@ -18,7 +18,8 @@ body {
 }
 
 .card {
-	position: absolute;
+	 position: absolute;
+margin-top: 10%;
 	top: 50%;
 	left: 50%;
 	width: 500px;
@@ -28,6 +29,7 @@ body {
 	transform: translate(-50%, -50%) perspective(2000px);
 	box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5);
 	transition: 1s;
+	
 }
 
 .card:hover {
@@ -49,7 +51,7 @@ body {
 
 .card:after {
 	content: '';
-	position: absolute;
+	 position: absolute;
 	top: 0;
 	right: -5px;
 	width: 5px;
@@ -73,7 +75,7 @@ body {
 }
 
 .card .details {
-	position: absolute;
+	 position: absolute;
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
