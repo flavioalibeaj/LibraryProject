@@ -5,7 +5,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CollectionsComponent } from './home-page/pages/collections/collections.component';
 import { SingleBookPageComponent } from './single-book-page/single-book-page.component';
 import { BooksPageComponentsComponent } from './books/pages/books-page-components/books-page-components.component';
-import { SearchComponent } from './books/search/search/search.component';
 
 const routes: Routes = [
   { path: "", component: HomePageComponent },

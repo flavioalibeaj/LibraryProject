@@ -13,6 +13,8 @@ export class BooksPageComponentsComponent {
   authors: string[] = ['Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey', 'Armor Ramsey']
   BooksPageComponentsComponent = BooksPageComponentsComponent;
 
+  
+
   getUsers() {
     return this.http.get('/api.............');
   }
