@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { HttpClient } from '@angular/common/http';
+import { BookService } from '../home-page/services/book.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-single-book-page',
@@ -14,10 +17,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ]),
   ],
 })
-export class SingleBookPageComponent {
+export class SingleBookPageComponent implements OnInit{
   flipState: string = 'front';
+
+  constructor(private service: BookService, private activeRoute: ActivatedRoute){}
+
+  ngOnInit(): void {
+    // this.activeRoute.params()
+  }
 
   flip() {
     this.flipState = this.flipState === 'front' ? 'back' : 'front';
   }
+
+  
+
+  // getOne(){
+  //   this.service.getOne().subscribe(res)
+  // }
 }
