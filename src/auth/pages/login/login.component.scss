@@ -1,5 +1,5 @@
 .topcontainer{
-	position:absolute;
+	// position:absolute;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -22,7 +22,9 @@
 	display: none;
 }
 .signup{
-	position: relative;
+	// position: relative;
+	display: flex;
+	justify-content: center;
 	width:100%;
 	height: 100%;
 }
@@ -72,7 +74,7 @@ button:hover{
 	height: 460px;
 	background: #eee;
 	border-radius: 60% / 10%;
-	transform: translateY(-180px);
+	transform: translateY(-140px);
 	transition: .8s ease-in-out;
 }
 .login label{
