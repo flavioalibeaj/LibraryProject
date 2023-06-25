@@ -18,11 +18,7 @@ export class MainService {
   }
 
   search(searchInput: string) {
-    // const params = { search: searchInput }
     const params = new HttpParams().set("search", searchInput)
-
-
-    // return this.http.get(`http://localhost:5000/?search=${params}`)
     return this.http.get(`http://localhost:5000/?${params}`)
   }
 }
