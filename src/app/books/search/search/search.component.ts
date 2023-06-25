@@ -22,12 +22,12 @@ export class SearchComponent implements OnInit {
 
 
   searchButton() {
-    const { searchValue } = this.searchInput.value
+    // const { searchValue } = this.searchInput.value
+    const { searchValue } = this.searchInput.value.searchValue
 
     this.mainService.search(searchValue).subscribe(res => {
       console.log("Response", res)
       this.router.navigate(['/'], { queryParams: { search: searchValue } })
     })
   }
-
 }
